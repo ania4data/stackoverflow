@@ -25,6 +25,8 @@ def clean_data(df):
     6. Create dummy columns for all the categorical variables, drop the original columns
     '''
     # Drop rows with missing salary values
+
+    #####:
     df = df.dropna(subset=['Salary'], axis=0)
     y = df['Salary']
 
